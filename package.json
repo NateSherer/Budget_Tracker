@@ -1,0 +1,15 @@
+{
+  "name": "week_9_sass",
+  "version": "1.0.0",
+  "description": "Week 9 Sass budget Tracker",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.81.0"
+  }
+}

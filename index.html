@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Budget Tracker</h1>
+    <form id="expense-form">
+    <input type="text" id="expense-type" placeholder="Expense:" required />
+    <input type="number" id="expense-cost" placeholder="Amount:" />
+    <select id="expense-category" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Emergency">Emergency</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Car">Car</option>
+        <option value="Housing">Housing</option>
+        <option value="Vacation">Vacation</option>
+        <option value="Other">Other</option> 
+    </select>
+            <input type="date" id="expense-date" required/>
+            <button type="submit">Add Expense</button>
+    </form>
+    <div class="budget-class">
+        <table>
+            <thead>
+        <tr>
+            <th>Expense Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody id="expense-list"></tbody>
+        </table>
+        <div class="total-amount">
+            <strong>Total:</strong>
+            $<span id="total-amount">0</span>
+        </div>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
